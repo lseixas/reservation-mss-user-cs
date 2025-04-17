@@ -1,3 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Amazon.CDK;
 
-Console.WriteLine("Hello, World!");
+namespace Iac
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var app = new App();
+
+            app.Synth();
+        }
+    }
+}
