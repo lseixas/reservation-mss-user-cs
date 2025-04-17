@@ -64,6 +64,11 @@ jobs:
             run: |
               cd iac
               cdk synth --app "dotnet run --project ./iac.csproj"
+              
+          - name: Bootstrap
+            run: |
+              cd iac
+              cdk bootstrap aws://${{ secrets.AWS_ACCOUNT_ID }}/${{ vars.AWS_REGION }} 
 
           - name: CDK Deploy
             run: |
