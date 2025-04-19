@@ -21,6 +21,7 @@ namespace iac
             Console.WriteLine(stackName);
             Console.WriteLine(githubRef);
 
+            new LambdaStack(app, new Dictionary<string, string>());
             new IacStack(app, stackName);
 
             app.Synth();
