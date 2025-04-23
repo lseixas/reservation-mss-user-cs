@@ -46,7 +46,7 @@ jobs:
       - name: Adjust Layer Directory
         run: |
           mkdir -p layer-package/opt/dotnet/shared
-          cp ./shared/bin/Release/net8.0/publish/* layer-package/opt/dotnet/shared/
+          cp ./shared/bin/Release/net8.0/publish/* layer-package/dotnet/shared/
 
       - name: Synthesize CDK
         run: |
