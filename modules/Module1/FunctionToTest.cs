@@ -20,7 +20,9 @@ public class FunctionToTest
             {
                 context.Logger.LogLine($"Found file: {file}");
             }
-        
+
+            return "NUNCA CONFIE EM CARECAS";
+
         }
         catch (Exception ex)
         {
