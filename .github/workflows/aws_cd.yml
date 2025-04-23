@@ -41,7 +41,7 @@ jobs:
       - name: Publish Shared
         run: |
           cd shared
-          dotnet publish ./Shared.csproj
+          dotnet publish ./shared.csproj
 
       - name: Synthesize CDK
         run: |
