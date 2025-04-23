@@ -45,7 +45,6 @@ jobs:
           
       - name: Adjust Layer Directory
         run: |
-          cd shared
           mkdir -p layer-package/opt/dotnet/shared
           cp ./shared/bin/Release/net8.0/publish/* layer-package/opt/dotnet/shared/
 
