@@ -36,6 +36,8 @@ public class FunctionToTest
         {
             context.Logger.LogLine("[CONFIG NOT FOUND] ./modules.runtimeconfig.json");
         }
+
+        shared.LayerClass layerClass = new shared.LayerClass(5);
         
         return "NUNCA CONFIE EM CARECAS";
 
