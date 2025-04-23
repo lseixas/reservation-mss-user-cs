@@ -31,7 +31,7 @@ public class Stack
             var sharedLayer = new LayerVersion(this, "ReservationMssUserCsLayer", new LayerVersionProps
             {
                 CompatibleRuntimes = new[] { Runtime.DOTNET_8 },
-                Code = Code.FromAsset("./shared/bin/Release/net8.0/publish"),
+                Code = Code.FromAsset("./layer-package"),
                 Description = "Lambda Layer for reservation csharp rebuild project",
                 RemovalPolicy = RemovalPolicy.DESTROY,
             });
