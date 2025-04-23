@@ -43,9 +43,9 @@ jobs:
           cd shared
           dotnet publish ./shared.csproj
           
-      - name: Adjust Layer Directory
+      - name: Adjust Layer Directory # dir does not need an /opt, as lambda already creates this directory
         run: |
-          mkdir -p layer-package/opt/dotnet/shared
+          mkdir -p layer-package/dotnet/shared
           cp ./shared/bin/Release/net8.0/publish/* layer-package/dotnet/shared/
 
       - name: Synthesize CDK
