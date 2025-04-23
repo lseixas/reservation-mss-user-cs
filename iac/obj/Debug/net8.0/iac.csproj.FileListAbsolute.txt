@@ -38,3 +38,4 @@ C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\iac\bin\Debug\net8.0\Sy
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\iac\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\iac\obj\Debug\net8.0\iac.csproj.AssemblyReference.cache
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\iac\obj\Debug\net8.0\iac.csproj.Up2Date
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\iac\obj\Debug\net8.0\iac.sourcelink.json
