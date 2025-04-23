@@ -11,9 +11,25 @@ public class FunctionToTest
     public string FunctionHandler(string input, ILambdaContext context)
     {
 
-        var smtFromLambda = new shared.LayerClass(5);
-
-        return "Hello your input was: " + input.ToUpper() + "; The number from layer is: shit";
+        context.Logger.LogLine("Looking for shared assembly...");
+        try 
+        {
+            // This will help us see what's happening
+            string[] files = System.IO.Directory.GetFiles("/opt/dotnet/shared/");
+            foreach (string file in files)
+            {
+                context.Logger.LogLine($"Found file: {file}");
+            }
+        
+            shared.LayerClass smtFromLayer = new shared.LayerClass(number: 1234);
+            return "Hello your input was: " + input.ToUpper() + "; The number from layer is: " + smtFromLayer.Number;
+        }
+        catch (Exception ex)
+        {
+            context.Logger.LogLine($"Error: {ex.Message}");
+            context.Logger.LogLine($"Stack: {ex.StackTrace}");
+            return $"Error: {ex.Message}";
+        }
         
     }
 }
