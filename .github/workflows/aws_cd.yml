@@ -32,11 +32,11 @@ jobs:
 
       - name: Restore .NET dependencies
         run: |
-          dotnet restore ./LambdaAttempt.sln
+          dotnet restore ./reservation_mss_user_cs_solution.sln
 
       - name: Build project
         run: |
-          dotnet build ./LambdaAttempt.sln
+          dotnet build ./reservation_mss_user_cs_solution.sln
 
       - name: Publish Shared
         run: |
