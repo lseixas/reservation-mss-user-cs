@@ -21,8 +21,6 @@ public class FunctionToTest
                 context.Logger.LogLine($"Found file: {file}");
             }
         
-            shared.LayerClass smtFromLayer = new shared.LayerClass(number: 1234);
-            return "Hello your input was: " + input.ToUpper() + "; The number from layer is: " + smtFromLayer.Number;
         }
         catch (Exception ex)
         {
