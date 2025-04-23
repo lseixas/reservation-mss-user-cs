@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices.Marshalling;
+﻿using System.Reflection;
+using System.Runtime.InteropServices.Marshalling;
 using Amazon.Lambda.Core;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
@@ -12,24 +13,31 @@ public class FunctionToTest
     {
 
         context.Logger.LogLine("Looking for shared assembly...");
-        try 
-        {
-            // This will help us see what's happening
-            string[] files = System.IO.Directory.GetFiles("/opt/dotnet/shared/");
-            foreach (string file in files)
-            {
-                context.Logger.LogLine($"Found file: {file}");
-            }
 
-            return "NUNCA CONFIE EM CARECAS";
-
-        }
-        catch (Exception ex)
-        {
-            context.Logger.LogLine($"Error: {ex.Message}");
-            context.Logger.LogLine($"Stack: {ex.StackTrace}");
-            return $"Error: {ex.Message}";
-        }
+        context.Logger.LogLine("Looking for opt");
+        ListDirectoryRecursive("/opt", context);
         
+        context.Logger.LogLine("Looking for dotnet");
+        ListDirectoryRecursive("/dotnet", context);
+
+        context.Logger.LogLine("Looking for .");
+        ListDirectoryRecursive(".", context);
+        
+        return "NUNCA CONFIE EM CARECAS";
+
+    }
+    void ListDirectoryRecursive(string path, ILambdaContext context)
+    {
+        if (!Directory.Exists(path))
+        {
+            context.Logger.LogLine($"Directory does not exist: {path}");
+            return;
+        }
+
+        var files = Directory.GetFiles(path, "*", SearchOption.AllDirectories);
+        foreach (var file in files)
+        {
+            context.Logger.LogLine($"[FOUND FILE] {file}");
+        }
     }
 }
