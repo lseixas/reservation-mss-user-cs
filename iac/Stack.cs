@@ -41,7 +41,7 @@ public class Stack
                 MemorySize = 1024,
                 LogRetention = RetentionDays.ONE_DAY,
                 Handler = "modules::FunctionToTest.Function::FunctionHandler",
-                Code = Code.FromAsset("./modules/FunctionToTest", new AssetOptions()
+                Code = Code.FromAsset("./modules/Module1", new AssetOptions()
                 {
                     Bundling = buildOption
                 }),
