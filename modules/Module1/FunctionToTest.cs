@@ -37,7 +37,15 @@ public class FunctionToTest
             context.Logger.LogLine("[CONFIG NOT FOUND] ./modules.runtimeconfig.json");
         }
 
-        shared.LayerClass layerClass = new shared.LayerClass(5);
+        try
+        {
+            var asm = Assembly.LoadFrom("/opt/shared/shared.dll");
+            context.Logger.LogLine($"[ManualLoad] Loaded: {asm.FullName}");
+        }
+        catch (Exception e)
+        {
+            context.Logger.LogLine($"[ManualLoadError] {e}");
+        }
         
         return "NUNCA CONFIE EM CARECAS";
 
