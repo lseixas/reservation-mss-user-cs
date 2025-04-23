@@ -41,7 +41,7 @@ public class Stack
                 Runtime = Runtime.DOTNET_8,
                 MemorySize = 1024,
                 LogRetention = RetentionDays.ONE_DAY,
-                Handler = "modules::Module1.FunctionToTest::FunctionHandler",
+                Handler = "modules::modules.Module1.FunctionToTest::FunctionHandler",
                 Code = Code.FromAsset(".", new AssetOptions()
                 {
                     Bundling = modulesBuildOption
