@@ -1,6 +1,8 @@
 ﻿using Constructs;
 using Amazon.CDK;
 using Amazon.CDK.AWS.Lambda;
+using Amazon.CDK.AWS.Logs;
+using AssetOptions = Amazon.CDK.AWS.S3.Assets.AssetOptions;
 
 namespace iac;
 
@@ -31,6 +33,19 @@ public class Stack
                 Code = Code.FromAsset("./shared/bin/Release/net8.0/publish"),
                 Description = "Lambda Layer for reservation csharp rebuild project",
                 RemovalPolicy = RemovalPolicy.DESTROY,
+            });
+            
+            var helloWorldLambdaFunction = new Function(this, "ReservationMssUserCsFunction", new FunctionProps
+            {
+                Runtime = Runtime.DOTNET_8,
+                MemorySize = 1024,
+                LogRetention = RetentionDays.ONE_DAY,
+                Handler = "modules::FunctionToTest.Function::FunctionHandler",
+                Code = Code.FromAsset("./modules/FunctionToTest", new AssetOptions()
+                {
+                    Bundling = buildOption
+                }),
+                Layers = new[] { sharedLayer }
             });
         }
     }
