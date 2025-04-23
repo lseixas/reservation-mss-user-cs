@@ -14,3 +14,4 @@ C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\obj\Debug\net8.
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\obj\Debug\net8.0\linux-x64\refint\modules.dll
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\obj\Debug\net8.0\linux-x64\modules.pdb
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\obj\Debug\net8.0\linux-x64\ref\modules.dll
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\bin\Debug\net8.0\linux-x64\runtimeconfig.template.json

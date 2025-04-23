@@ -23,7 +23,19 @@ public class FunctionToTest
         context.Logger.LogLine("Looking for .");
         ListDirectoryRecursive(".", context);
 
-        shared.LayerClass layerClass = new shared.LayerClass(5);
+        // Try to read runtimeconfig.json if it exists
+        string configPath = "./modules.runtimeconfig.json"; // Adjust filename if different
+        if (File.Exists(configPath))
+        {
+            context.Logger.LogLine($"[FOUND CONFIG] {configPath}");
+            string configContent = File.ReadAllText(configPath);
+            context.Logger.LogLine("[CONFIG CONTENT]");
+            context.Logger.LogLine(configContent);
+        }
+        else
+        {
+            context.Logger.LogLine("[CONFIG NOT FOUND] ./modules.runtimeconfig.json");
+        }
         
         return "NUNCA CONFIE EM CARECAS";
 
