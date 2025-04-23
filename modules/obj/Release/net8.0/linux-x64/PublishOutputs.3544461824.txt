@@ -1,0 +1,5 @@
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\bin\Release\net8.0\linux-x64\publish\modules.deps.json
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\bin\Release\net8.0\linux-x64\publish\modules.pdb
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\bin\Release\net8.0\linux-x64\publish\Amazon.Lambda.Core.dll
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\bin\Release\net8.0\linux-x64\publish\Amazon.Lambda.Serialization.SystemTextJson.dll
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\bin\Release\net8.0\linux-x64\publish\modules.dll
