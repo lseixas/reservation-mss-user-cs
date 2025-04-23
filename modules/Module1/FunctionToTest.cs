@@ -22,6 +22,8 @@ public class FunctionToTest
 
         context.Logger.LogLine("Looking for .");
         ListDirectoryRecursive(".", context);
+
+        shared.LayerClass layerClass = new shared.LayerClass(5);
         
         return "NUNCA CONFIE EM CARECAS";
 
