@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iac", "iac\iac.csproj", "{6DEB9E0A-2F7F-4433-90B1-7287019AE960}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "modules", "modules\modules.csproj", "{28978B61-2905-4417-89FE-69F03DE3BA27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shared", "shared\shared.csproj", "{C393D4D0-72B6-41C3-A9EB-7E6744F484EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DEB9E0A-2F7F-4433-90B1-7287019AE960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DEB9E0A-2F7F-4433-90B1-7287019AE960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DEB9E0A-2F7F-4433-90B1-7287019AE960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DEB9E0A-2F7F-4433-90B1-7287019AE960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28978B61-2905-4417-89FE-69F03DE3BA27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28978B61-2905-4417-89FE-69F03DE3BA27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28978B61-2905-4417-89FE-69F03DE3BA27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28978B61-2905-4417-89FE-69F03DE3BA27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C393D4D0-72B6-41C3-A9EB-7E6744F484EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C393D4D0-72B6-41C3-A9EB-7E6744F484EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C393D4D0-72B6-41C3-A9EB-7E6744F484EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C393D4D0-72B6-41C3-A9EB-7E6744F484EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
