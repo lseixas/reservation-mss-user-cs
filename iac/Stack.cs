@@ -12,7 +12,7 @@ public class Stack
     {
         internal StackClass(Construct scope, string id, StackProps? props = null) : base(scope, id, props)
         {
-            var buildOption = new BundlingOptions()
+            var modulesBuildOption = new BundlingOptions()
             {
                 Image = Runtime.DOTNET_8.BundlingImage,
                 User = "root",
@@ -21,6 +21,7 @@ public class Stack
                 {
                     "/bin/sh",
                     "-c",
+                    "cd modules && " +
                     "dotnet tool install -g Amazon.Lambda.Tools" +
                     " && dotnet build" +
                     " && dotnet lambda package --output-package /asset-output/function.zip"
@@ -41,9 +42,9 @@ public class Stack
                 MemorySize = 1024,
                 LogRetention = RetentionDays.ONE_DAY,
                 Handler = "modules::Module1.FunctionToTest::FunctionHandler",
-                Code = Code.FromAsset("./modules", new AssetOptions()
+                Code = Code.FromAsset(".", new AssetOptions()
                 {
-                    Bundling = buildOption
+                    Bundling = modulesBuildOption
                 }),
                 Layers = new[] { sharedLayer }
             });
