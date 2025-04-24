@@ -46,10 +46,24 @@ public class Stack
                 Runtime = Runtime.DOTNET_8,
                 MemorySize = 1024,
                 LogRetention = RetentionDays.ONE_DAY,
-                Handler = "GetUserAssembly::modules.GetUser.GetUserPresenter::FunctionHandler",
+                Handler = "GetUserAssembly::GetUser.GetUserPresenter::FunctionHandler",
                 Code = Code.FromAsset(".", new AssetOptions()
                 {
                     Bundling = newBundlingOptions(moduleName: "GetUser")
+                }),
+                Layers = new[] { sharedLayer }
+            });
+
+            var ScanLamdaDirectoryFunction = new Function(this, "ScanLambdaDirectoryFunction", new FunctionProps
+            {
+                Runtime = Runtime.DOTNET_8,
+                MemorySize = 1024,
+                LogRetention = RetentionDays.ONE_DAY,
+                Handler =
+                    "ScanLambdaDirectoryAssembly::ScanLambdaDirectory.ScanLambdaDirectoryPresenter::FunctionHandler",
+                Code = Code.FromAsset(".", new AssetOptions()
+                {
+                    Bundling = newBundlingOptions(moduleName: "ScanLambdaDirectory")
                 }),
                 Layers = new[] { sharedLayer }
             });

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetUser", "modules\GetUser\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{0A426776-606D-4564-B034-8756DD4BE82B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanLambdaDirectory", "modules\ScanLambdaDirectory\ScanLambdaDirectory.csproj", "{19B5FC56-A01E-433F-AA99-6CA4214D7287}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,8 +40,13 @@ Global
 		{0A426776-606D-4564-B034-8756DD4BE82B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A426776-606D-4564-B034-8756DD4BE82B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A426776-606D-4564-B034-8756DD4BE82B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B5FC56-A01E-433F-AA99-6CA4214D7287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B5FC56-A01E-433F-AA99-6CA4214D7287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B5FC56-A01E-433F-AA99-6CA4214D7287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B5FC56-A01E-433F-AA99-6CA4214D7287}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E7195F8B-1DC2-4B15-AD31-053746316DE4} = {558775B2-BB5A-4D2C-808C-B575122C75EF}
+		{19B5FC56-A01E-433F-AA99-6CA4214D7287} = {558775B2-BB5A-4D2C-808C-B575122C75EF}
 	EndGlobalSection
 EndGlobal
