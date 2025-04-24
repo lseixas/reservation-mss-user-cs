@@ -1,7 +1,7 @@
 ﻿{
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/opt/shared"
+      "/opt/shared.dll"
     ]
   }
 }

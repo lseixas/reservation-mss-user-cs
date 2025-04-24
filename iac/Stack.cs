@@ -10,9 +10,10 @@ public class Stack
 {
     public class StackClass : Amazon.CDK.Stack
     {
-        internal StackClass(Construct scope, string id, StackProps? props = null) : base(scope, id, props)
+
+        private BundlingOptions newBundlingOptions(string moduleName)
         {
-            var modulesBuildOption = new BundlingOptions()
+            return new BundlingOptions()
             {
                 Image = Runtime.DOTNET_8.BundlingImage,
                 User = "root",
@@ -21,12 +22,16 @@ public class Stack
                 {
                     "/bin/sh",
                     "-c",
-                    "cd modules && " +
+                    $"cd modules/{moduleName} && " +
                     "dotnet tool install -g Amazon.Lambda.Tools" +
                     " && dotnet build" +
                     " && dotnet lambda package --output-package /asset-output/function.zip"
                 }
             };
+        }
+        
+        internal StackClass(Construct scope, string id, StackProps? props = null) : base(scope, id, props)
+        {
 
             var sharedLayer = new LayerVersion(this, "ReservationMssUserCsLayer", new LayerVersionProps
             {
@@ -35,16 +40,16 @@ public class Stack
                 Description = "Lambda Layer for reservation csharp rebuild project",
                 RemovalPolicy = RemovalPolicy.DESTROY,
             });
-            
-            var helloWorldLambdaFunction = new Function(this, "ReservationMssUserCsFunction", new FunctionProps
+
+            var GetUserLambdaFunction = new Function(this, "GetUserFunction", new FunctionProps
             {
                 Runtime = Runtime.DOTNET_8,
                 MemorySize = 1024,
                 LogRetention = RetentionDays.ONE_DAY,
-                Handler = "modules::modules.Module1.FunctionToTest::FunctionHandler",
+                Handler = "GetUser.GetUserAssembly::modules.GetUser.GetUserPresenter::FunctionHandler",
                 Code = Code.FromAsset(".", new AssetOptions()
                 {
-                    Bundling = modulesBuildOption
+                    Bundling = newBundlingOptions(moduleName: "GetUser")
                 }),
                 Layers = new[] { sharedLayer }
             });
