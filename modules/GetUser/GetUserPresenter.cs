@@ -1,6 +1,8 @@
 ﻿using Amazon.Lambda.Core;
-namespace GetUser;
 
+[assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
+
+namespace GetUser;
 public class GetUserPresenter
 {
     public string FunctionHandler(string input, ILambdaContext context)

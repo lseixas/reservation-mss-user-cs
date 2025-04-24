@@ -1,6 +1,8 @@
 ﻿using Amazon.Lambda.Core;
-namespace ScanLambdaDirectory;
 
+[assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
+
+namespace ScanLambdaDirectory;
 public class ScanLambdaDirectoryPresenter
 {
     public string FunctionHandler(string input, ILambdaContext context)
