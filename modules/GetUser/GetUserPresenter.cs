@@ -3,7 +3,7 @@ namespace GetUser;
 
 public class GetUserPresenter
 {
-    public string FunctionHandler(ILambdaContext context, string input)
+    public string FunctionHandler(string input, ILambdaContext context)
     {
 
         var instance = Common.AssemblyLoader.CreateInstance("LayerAssembly");
@@ -32,6 +32,8 @@ public class GetUserPresenter
         {
             context.Logger.LogLine("[CONFIG NOT FOUND] ./modules.runtimeconfig.json");
         }
+
+        shared.LayerClass layerClass = new shared.LayerClass(5);
         
         return "NUNCA CONFIE EM CARECAS";
 

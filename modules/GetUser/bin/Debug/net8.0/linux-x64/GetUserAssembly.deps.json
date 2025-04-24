@@ -11,7 +11,8 @@
         "dependencies": {
           "Amazon.Lambda.Core": "2.5.0",
           "Amazon.Lambda.Serialization.SystemTextJson": "2.4.4",
-          "Common": "1.0.0"
+          "Common": "1.0.0",
+          "shared": "1.0.0"
         },
         "runtime": {
           "GetUserAssembly.dll": {}

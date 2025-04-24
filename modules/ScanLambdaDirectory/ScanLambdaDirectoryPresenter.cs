@@ -3,7 +3,7 @@ namespace ScanLambdaDirectory;
 
 public class ScanLambdaDirectoryPresenter
 {
-    public string FunctionHandler(ILambdaContext context, string input)
+    public string FunctionHandler(string input, ILambdaContext context)
     {
 
         var instance = Common.AssemblyLoader.CreateInstance("LayerAssembly");
