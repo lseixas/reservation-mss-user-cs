@@ -7,7 +7,7 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {},
     ".NETCoreApp,Version=v8.0/linux-x64": {
-      "ScanLambdaDirectory/1.0.0": {
+      "ScanLambdaDirectoryAssembly/1.0.0": {
         "dependencies": {
           "Amazon.Lambda.Core": "2.5.0",
           "Amazon.Lambda.Serialization.SystemTextJson": "2.4.4",
@@ -15,7 +15,7 @@
           "shared": "1.0.0"
         },
         "runtime": {
-          "ScanLambdaDirectory.dll": {}
+          "ScanLambdaDirectoryAssembly.dll": {}
         }
       },
       "Amazon.Lambda.Core/2.5.0": {
@@ -48,7 +48,7 @@
     }
   },
   "libraries": {
-    "ScanLambdaDirectory/1.0.0": {
+    "ScanLambdaDirectoryAssembly/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
