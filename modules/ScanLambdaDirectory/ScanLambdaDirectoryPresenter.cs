@@ -46,10 +46,19 @@ public class ScanLambdaDirectoryPresenter
             return;
         }
 
-        var files = Directory.GetFiles(path, "*", SearchOption.AllDirectories);
-        foreach (var file in files)
+        // log this directory itself
+        context.Logger.LogLine($"[DIR] {path}");
+
+        // 1️⃣  log every file in the current directory
+        foreach (var file in Directory.GetFiles(path))
         {
-            context.Logger.LogLine($"[FOUND FILE] {file}");
+            context.Logger.LogLine($"[FILE] {file}");
+        }
+
+        // 2️⃣  recurse into every sub‑directory
+        foreach (var dir in Directory.GetDirectories(path))
+        {
+            ListDirectoryRecursive(dir, context);
         }
     }
 }
