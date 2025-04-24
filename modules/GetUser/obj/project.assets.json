@@ -148,8 +148,8 @@
     },
     "shared/1.0.0": {
       "type": "project",
-      "path": "../../shared/shared.csproj",
-      "msbuildProject": "../../shared/shared.csproj"
+      "path": "../../opt/dotnet/shared.csproj",
+      "msbuildProject": "../../opt/dotnet/shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -188,8 +188,8 @@
             "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\Common\\Common.csproj": {
               "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\Common\\Common.csproj"
             },
-            "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\shared.csproj": {
-              "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\shared.csproj"
+            "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\opt\\dotnet\\shared.csproj": {
+              "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\opt\\dotnet\\shared.csproj"
             }
           }
         }

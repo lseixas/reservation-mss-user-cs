@@ -1,4 +1,5 @@
 ﻿using Amazon.Lambda.Core;
+using opt.dotnet.shared;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
@@ -9,7 +10,7 @@ public class GetUserPresenter
     {
         try
         {
-            shared.LayerClass layerClass = new shared.LayerClass(5);
+            LayerClass layerClass = new LayerClass(5);
             context.Logger.LogLine("Successfully created LayerClass");
         }
         catch (Exception ex)
