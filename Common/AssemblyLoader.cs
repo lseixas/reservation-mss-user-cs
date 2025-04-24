@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace modules;
+namespace Common;
 
 public static class AssemblyLoader
 {

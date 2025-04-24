@@ -1,6 +1,4 @@
 ﻿using Amazon.Lambda.Core;
-using modules;
-
 namespace GetUser;
 
 public class GetUserPresenter
@@ -8,7 +6,7 @@ public class GetUserPresenter
     public string FunctionHandler(ILambdaContext context, string input)
     {
 
-        var instance = AssemblyLoader.CreateInstance("LayerAssembly");
+        var instance = Common.AssemblyLoader.CreateInstance("LayerAssembly");
         
         context.Logger.LogLine("Looking for shared assembly...");
 

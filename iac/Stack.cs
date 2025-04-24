@@ -46,7 +46,7 @@ public class Stack
                 Runtime = Runtime.DOTNET_8,
                 MemorySize = 1024,
                 LogRetention = RetentionDays.ONE_DAY,
-                Handler = "GetUser.GetUserAssembly::modules.GetUser.GetUserPresenter::FunctionHandler",
+                Handler = "GetUserAssembly::modules.GetUser.GetUserPresenter::FunctionHandler",
                 Code = Code.FromAsset(".", new AssetOptions()
                 {
                     Bundling = newBundlingOptions(moduleName: "GetUser")

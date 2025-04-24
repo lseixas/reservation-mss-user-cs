@@ -13,8 +13,7 @@
   <ItemGroup>
     <PackageReference Include="Amazon.Lambda.Core" Version="2.5.0" />
     <PackageReference Include="Amazon.Lambda.Serialization.SystemTextJson" Version="2.4.4" />
-    <ProjectReference Include="../../shared/shared.csproj" Private="false" />
-    <ProjectReference Include="../modules.csproj" Private="false"/>
+    <ProjectReference Include="../../Common/Common.csproj"/>
 
     <None Update="../runtimeconfig.template.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
