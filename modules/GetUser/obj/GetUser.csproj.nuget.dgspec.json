@@ -48,6 +48,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Amazon.CDK.AWS.APIGateway": {
+              "target": "Package",
+              "version": "(, )"
+            },
+            "Amazon.Lambda.APIGatewayEvents": {
+              "target": "Package",
+              "version": "(, )"
+            },
             "Amazon.Lambda.Core": {
               "target": "Package",
               "version": "[2.5.0, )"

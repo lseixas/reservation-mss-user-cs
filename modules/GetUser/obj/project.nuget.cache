@@ -1,14 +1,73 @@
 {
   "version": 2,
-  "dgSpecHash": "6m9GPuEd6Z4=",
+  "dgSpecHash": "c7MxkTiIbz4=",
   "success": true,
   "projectFilePath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\modules\\GetUser\\GetUser.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Leonardo\\.nuget\\packages\\amazon.cdk\\0.9.0\\amazon.cdk.0.9.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\amazon.cdk.aws.apigateway\\0.9.0\\amazon.cdk.aws.apigateway.0.9.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\amazon.cdk.cxapi\\0.9.0\\amazon.cdk.cxapi.0.9.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\amazon.jsii.jsonmodel\\0.7.4\\amazon.jsii.jsonmodel.0.7.4.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\amazon.jsii.runtime\\0.7.4\\amazon.jsii.runtime.0.7.4.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\amazon.lambda.apigatewayevents\\1.0.0\\amazon.lambda.apigatewayevents.1.0.0.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\amazon.lambda.core\\2.5.0\\amazon.lambda.core.2.5.0.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.4.4\\amazon.lambda.serialization.systemtextjson.2.4.4.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.0.2\\microsoft.extensions.configuration.abstractions.2.0.2.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.0.0\\microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.extensions.logging\\2.0.2\\microsoft.extensions.logging.2.0.2.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.2\\microsoft.extensions.logging.abstractions.2.0.2.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.extensions.logging.console\\2.0.2\\microsoft.extensions.logging.console.2.0.2.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.extensions.options\\2.0.2\\microsoft.extensions.options.2.0.2.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.extensions.primitives\\2.0.0\\microsoft.extensions.primitives.2.0.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\runtime.any.system.globalization\\4.0.11\\runtime.any.system.globalization.4.0.11.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\runtime.any.system.io\\4.1.0\\runtime.any.system.io.4.1.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\runtime.any.system.reflection\\4.1.0\\runtime.any.system.reflection.4.1.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\runtime.any.system.reflection.primitives\\4.0.1\\runtime.any.system.reflection.primitives.4.0.1.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\runtime.any.system.resources.resourcemanager\\4.0.1\\runtime.any.system.resources.resourcemanager.4.0.1.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\runtime.any.system.runtime\\4.1.0\\runtime.any.system.runtime.4.1.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\runtime.any.system.text.encoding\\4.0.11\\runtime.any.system.text.encoding.4.0.11.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\runtime.any.system.threading.tasks\\4.0.11\\runtime.any.system.threading.tasks.4.0.11.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\runtime.unix.system.private.uri\\4.0.1\\runtime.unix.system.private.uri.4.0.1.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\system.globalization\\4.0.11\\system.globalization.4.0.11.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\system.io\\4.1.0\\system.io.4.1.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\system.private.uri\\4.0.1\\system.private.uri.4.0.1.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\system.reflection\\4.1.0\\system.reflection.4.1.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\system.reflection.primitives\\4.0.1\\system.reflection.primitives.4.0.1.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\system.resources.resourcemanager\\4.0.1\\system.resources.resourcemanager.4.0.1.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\system.runtime\\4.1.0\\system.runtime.4.1.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.4.0\\system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\system.runtime.serialization.primitives\\4.1.1\\system.runtime.serialization.primitives.4.1.1.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\system.text.encoding\\4.0.11\\system.text.encoding.4.0.11.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\system.threading.tasks\\4.0.11\\system.threading.tasks.4.0.11.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-x64\\8.0.13\\microsoft.netcore.app.runtime.linux-x64.8.0.13.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\8.0.13\\microsoft.aspnetcore.app.runtime.linux-x64.8.0.13.nupkg.sha512",
     "C:\\Users\\Leonardo\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\8.0.13\\microsoft.netcore.app.crossgen2.win-x64.8.0.13.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1604",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "A dependência do projeto Amazon.CDK.AWS.APIGateway não contém nenhum limite inferior inclusivo. Inclua um limite inferior na versão de dependência para assegurar resultados de restauração coerentes.",
+      "libraryId": "Amazon.CDK.AWS.APIGateway",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v8.0"
+      ]
+    },
+    {
+      "code": "NU1604",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "A dependência do projeto Amazon.Lambda.APIGatewayEvents não contém nenhum limite inferior inclusivo. Inclua um limite inferior na versão de dependência para assegurar resultados de restauração coerentes.",
+      "libraryId": "Amazon.Lambda.APIGatewayEvents",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v8.0"
+      ]
+    }
+  ]
 }

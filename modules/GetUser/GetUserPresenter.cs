@@ -1,4 +1,5 @@
-﻿using Amazon.Lambda.Core;
+﻿using Amazon.Lambda.APIGatewayEvents;
+using Amazon.Lambda.Core;
 using opt.dotnet.shared;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
@@ -6,7 +7,7 @@ using opt.dotnet.shared;
 namespace GetUser;
 public class GetUserPresenter
 {
-    public string FunctionHandler(string input, ILambdaContext context)
+    public APIGatewayProxyResponse FunctionHandler(APIGatewayProxyRequest input, ILambdaContext context)
     {
         try
         {
@@ -19,6 +20,10 @@ public class GetUserPresenter
             context.Logger.LogLine($"Stack Trace: {ex.StackTrace}");
         }
 
-        return "TS NOT WORK";
+        return new APIGatewayProxyResponse()
+        {
+            Body = "Hello from GetUser!",
+            StatusCode = 200
+        };
     }
 }
