@@ -11,7 +11,6 @@
         "dependencies": {
           "Amazon.Lambda.Core": "2.5.0",
           "Amazon.Lambda.Serialization.SystemTextJson": "2.4.4",
-          "Common": "1.0.0",
           "shared": "1.0.0"
         },
         "runtime": {
@@ -37,18 +36,10 @@
           }
         }
       },
-      "Common/1.0.0": {
-        "runtime": {
-          "Common.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "shared/1.0.0": {
         "runtime": {
           "shared.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -74,11 +65,6 @@
       "sha512": "sha512-iv/cvqFuZ3v3+NFDyof0IJZvU+4kdpzOe3pWSBwp9HB885I+D32WQxuid9V4GnvRynER9XnWMPaDmImX8qH5cA==",
       "path": "amazon.lambda.serialization.systemtextjson/2.4.4",
       "hashPath": "amazon.lambda.serialization.systemtextjson.2.4.4.nupkg.sha512"
-    },
-    "Common/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "shared/1.0.0": {
       "type": "project",

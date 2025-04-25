@@ -3,9 +3,7 @@ C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Deb
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\GetUserAssembly.pdb
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\Amazon.Lambda.Core.dll
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\Amazon.Lambda.Serialization.SystemTextJson.dll
-C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\Common.dll
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\shared.dll
-C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\Common.pdb
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\shared.pdb
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\obj\Debug\net8.0\linux-x64\GetUser.csproj.AssemblyReference.cache
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\obj\Debug\net8.0\linux-x64\GetUser.GeneratedMSBuildEditorConfig.editorconfig

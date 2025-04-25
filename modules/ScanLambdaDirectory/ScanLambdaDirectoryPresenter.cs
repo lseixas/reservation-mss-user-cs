@@ -7,8 +7,6 @@ public class ScanLambdaDirectoryPresenter
 {
     public string FunctionHandler(string input, ILambdaContext context)
     {
-
-        var instance = Common.AssemblyLoader.CreateInstance("LayerAssembly");
         
         context.Logger.LogLine("Looking for shared assembly...");
 

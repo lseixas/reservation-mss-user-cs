@@ -3,8 +3,6 @@ C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\ScanLambdaDirec
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\ScanLambdaDirectory\bin\Debug\net8.0\linux-x64\ScanLambdaDirectoryAssembly.pdb
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\ScanLambdaDirectory\bin\Debug\net8.0\linux-x64\Amazon.Lambda.Core.dll
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\ScanLambdaDirectory\bin\Debug\net8.0\linux-x64\Amazon.Lambda.Serialization.SystemTextJson.dll
-C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\ScanLambdaDirectory\bin\Debug\net8.0\linux-x64\Common.dll
-C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\ScanLambdaDirectory\bin\Debug\net8.0\linux-x64\Common.pdb
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\ScanLambdaDirectory\obj\Debug\net8.0\linux-x64\ScanLambdaDirectory.csproj.AssemblyReference.cache
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\ScanLambdaDirectory\obj\Debug\net8.0\linux-x64\ScanLambdaDirectory.GeneratedMSBuildEditorConfig.editorconfig
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\ScanLambdaDirectory\obj\Debug\net8.0\linux-x64\ScanLambdaDirectory.AssemblyInfoInputs.cache
