@@ -31,16 +31,6 @@
           }
         }
       },
-      "Common/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/Common.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Common.dll": {}
-        }
-      },
       "shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -80,16 +70,6 @@
           "lib/net8.0/Amazon.Lambda.Serialization.SystemTextJson.dll": {
             "related": ".xml"
           }
-        }
-      },
-      "Common/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/Common.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Common.dll": {}
         }
       },
       "shared/1.0.0": {
@@ -141,11 +121,6 @@
         "lib/netcoreapp3.1/Amazon.Lambda.Serialization.SystemTextJson.xml"
       ]
     },
-    "Common/1.0.0": {
-      "type": "project",
-      "path": "../../Common/Common.csproj",
-      "msbuildProject": "../../Common/Common.csproj"
-    },
     "shared/1.0.0": {
       "type": "project",
       "path": "../../opt/dotnet/shared.csproj",
@@ -156,7 +131,6 @@
     "net8.0": [
       "Amazon.Lambda.Core >= 2.5.0",
       "Amazon.Lambda.Serialization.SystemTextJson >= 2.4.4",
-      "Common >= 1.0.0",
       "shared >= 1.0.0"
     ]
   },
@@ -185,9 +159,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\Common\\Common.csproj": {
-              "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\Common\\Common.csproj"
-            },
             "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\opt\\dotnet\\shared.csproj": {
               "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\opt\\dotnet\\shared.csproj"
             }
@@ -203,7 +174,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -232,15 +204,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-            "version": "[8.0.15, 8.0.15]"
+            "version": "[8.0.13, 8.0.13]"
           },
           {
             "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
-            "version": "[8.0.15, 8.0.15]"
+            "version": "[8.0.13, 8.0.13]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.linux-x64",
-            "version": "[8.0.15, 8.0.15]"
+            "version": "[8.0.13, 8.0.13]"
           }
         ],
         "frameworkReferences": {
@@ -248,7 +220,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Leonardo\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

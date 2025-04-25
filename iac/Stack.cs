@@ -1,5 +1,7 @@
-﻿using Constructs;
+﻿using System.ComponentModel;
+using Constructs;
 using Amazon.CDK;
+using Amazon.CDK.AWS.APIGateway;
 using Amazon.CDK.AWS.Lambda;
 using Amazon.CDK.AWS.Logs;
 using AssetOptions = Amazon.CDK.AWS.S3.Assets.AssetOptions;
@@ -33,6 +35,28 @@ public class Stack
         internal StackClass(Construct scope, string id, StackProps? props = null) : base(scope, id, props)
         {
 
+            var restApi = new RestApi(this, "ReservationMssUserCsRestApi", new RestApiProps
+            {
+                RestApiName = "ReservationMssUserCsRestApi",
+                Description = "API for ReservationMssUserCs",
+                DefaultCorsPreflightOptions = new CorsOptions
+                {
+                    AllowOrigins = Cors.ALL_ORIGINS,
+                    AllowMethods = Cors.ALL_METHODS,
+                    AllowHeaders = Cors.DEFAULT_HEADERS,
+                }
+            });
+
+            var apiGatewayResource = restApi.Root.AddResource("reservation-mss-user-cs", new RestApiProps
+            {
+                DefaultCorsPreflightOptions = new CorsOptions
+                {
+                    AllowOrigins = Cors.ALL_ORIGINS,
+                    AllowMethods = Cors.ALL_METHODS,
+                    AllowHeaders = Cors.DEFAULT_HEADERS,
+                }
+            });
+
             var sharedLayer = new LayerVersion(this, "ReservationMssUserCsLayer", new LayerVersionProps
             {
                 CompatibleRuntimes = new[] { Runtime.DOTNET_8 },
@@ -41,7 +65,7 @@ public class Stack
                 RemovalPolicy = RemovalPolicy.DESTROY,
             });
 
-            var GetUserLambdaFunction = new Function(this, "GetUserFunction", new FunctionProps
+            var getUserLambdaFunction = new Function(this, "GetUserFunction", new FunctionProps
             {
                 Runtime = Runtime.DOTNET_8,
                 MemorySize = 1024,
@@ -51,10 +75,14 @@ public class Stack
                 {
                     Bundling = newBundlingOptions(moduleName: "GetUser")
                 }),
-                Layers = new[] { sharedLayer }
+                Layers = new[] { sharedLayer },
+                
             });
 
-            var ScanLamdaDirectoryFunction = new Function(this, "ScanLambdaDirectoryFunction", new FunctionProps
+            getUserLambdaFunction.ApplyRemovalPolicy(RemovalPolicy.DESTROY);
+            apiGatewayResource.AddResource("get-user").AddMethod("GET", integration: new LambdaIntegration(getUserLambdaFunction));
+
+            var scanLamdaDirectoryFunction = new Function(this, "ScanLambdaDirectoryFunction", new FunctionProps
             {
                 Runtime = Runtime.DOTNET_8,
                 MemorySize = 1024,
@@ -67,6 +95,9 @@ public class Stack
                 }),
                 Layers = new[] { sharedLayer }
             });
+            
+            scanLamdaDirectoryFunction.ApplyRemovalPolicy(RemovalPolicy.DESTROY);
+            
         }
     }
 }
