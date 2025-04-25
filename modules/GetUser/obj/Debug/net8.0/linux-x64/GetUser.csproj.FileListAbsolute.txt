@@ -1,5 +1,6 @@
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\runtimeconfig.template.json
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\GetUserAssembly.deps.json
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\GetUserAssembly.runtimeconfig.json
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\GetUserAssembly.dll
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\GetUserAssembly.pdb
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\Amazon.CDK.dll
@@ -29,4 +30,5 @@ C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\obj\Deb
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\obj\Debug\net8.0\linux-x64\GetUserAssembly.dll
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\obj\Debug\net8.0\linux-x64\refint\GetUserAssembly.dll
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\obj\Debug\net8.0\linux-x64\GetUserAssembly.pdb
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\obj\Debug\net8.0\linux-x64\GetUser.genruntimeconfig.cache
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\obj\Debug\net8.0\linux-x64\ref\GetUserAssembly.dll

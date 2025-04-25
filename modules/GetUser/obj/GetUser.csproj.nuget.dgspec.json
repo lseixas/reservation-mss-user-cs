@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\opt\\dotnet\\shared.csproj": {
-                "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\opt\\dotnet\\shared.csproj"
+              "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\shared.csproj": {
+                "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\shared.csproj"
               }
             }
           }
@@ -104,14 +104,14 @@
         }
       }
     },
-    "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\opt\\dotnet\\shared.csproj": {
+    "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\opt\\dotnet\\shared.csproj",
-        "projectName": "shared",
-        "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\opt\\dotnet\\shared.csproj",
+        "projectUniqueName": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\shared.csproj",
+        "projectName": "bin",
+        "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\shared.csproj",
         "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
-        "outputPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\opt\\dotnet\\obj\\",
+        "outputPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leonardo\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -7,6 +7,10 @@
     <Nullable>enable</Nullable>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AWSProjectType>Lambda</AWSProjectType>
+    <!-- This property makes the build directory similar to a publish directory and helps the AWS .NET Lambda
+         tool get ready to package the project -->
     <PublishReadyToRun>true</PublishReadyToRun>
   </PropertyGroup>
 
@@ -15,7 +19,7 @@
     <PackageReference Include="Amazon.Lambda.Serialization.SystemTextJson" Version="2.4.4" />
     <PackageReference Include="Amazon.CDK.AWS.APIGateway"/>
     <PackageReference Include="Amazon.Lambda.APIGatewayEvents"/>
-    <ProjectReference Include="../../opt/dotnet/shared.csproj" Private="false"/>
+    <ProjectReference Include="../../shared/shared.csproj" Private="false"/>
 
     <None Update="./runtimeconfig.template.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

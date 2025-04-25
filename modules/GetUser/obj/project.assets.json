@@ -409,14 +409,14 @@
           }
         }
       },
-      "shared/1.0.0": {
+      "bin/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
-          "bin/placeholder/shared.dll": {}
+          "bin/placeholder/bin.dll": {}
         },
         "runtime": {
-          "bin/placeholder/shared.dll": {}
+          "bin/placeholder/bin.dll": {}
         }
       }
     },
@@ -947,14 +947,14 @@
           }
         }
       },
-      "shared/1.0.0": {
+      "bin/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
-          "bin/placeholder/shared.dll": {}
+          "bin/placeholder/bin.dll": {}
         },
         "runtime": {
-          "bin/placeholder/shared.dll": {}
+          "bin/placeholder/bin.dll": {}
         }
       }
     }
@@ -2163,10 +2163,10 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "shared/1.0.0": {
+    "bin/1.0.0": {
       "type": "project",
-      "path": "../../opt/dotnet/shared.csproj",
-      "msbuildProject": "../../opt/dotnet/shared.csproj"
+      "path": "../../shared/shared.csproj",
+      "msbuildProject": "../../shared/shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2175,7 +2175,7 @@
       "Amazon.Lambda.APIGatewayEvents",
       "Amazon.Lambda.Core >= 2.5.0",
       "Amazon.Lambda.Serialization.SystemTextJson >= 2.4.4",
-      "shared >= 1.0.0"
+      "bin >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2203,8 +2203,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\opt\\dotnet\\shared.csproj": {
-              "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\opt\\dotnet\\shared.csproj"
+            "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\shared.csproj": {
+              "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\shared.csproj"
             }
           }
         }
