@@ -1,0 +1,3 @@
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\opt\dotnet\bin\Release\net8.0\linux-x64\publish\shared.dll
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\opt\dotnet\bin\Release\net8.0\linux-x64\publish\shared.deps.json
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\opt\dotnet\bin\Release\net8.0\linux-x64\publish\shared.pdb

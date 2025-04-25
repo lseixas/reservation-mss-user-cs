@@ -1,3 +1,4 @@
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\runtimeconfig.template.json
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\GetUserAssembly.deps.json
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\GetUserAssembly.dll
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\GetUser\bin\Debug\net8.0\linux-x64\GetUserAssembly.pdb

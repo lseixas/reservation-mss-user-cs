@@ -1,0 +1,8 @@
+﻿{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/opt/dotnet",
+      "/opt/dotnet/shared"
+    ]
+  }
+}
