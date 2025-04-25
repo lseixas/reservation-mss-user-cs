@@ -1,0 +1,8 @@
+﻿{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/opt/bin",
+      "/opt/bin/shared"
+    ]
+  }
+}
