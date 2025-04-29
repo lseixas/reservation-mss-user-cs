@@ -68,15 +68,16 @@ public class Stack
                         Image = Runtime.DOTNET_8.BundlingImage,
                         User = "root",
                         OutputType = BundlingOutput.ARCHIVED,
-                        Command = new [] {
+                        Command = new[]
+                        {
                             "/bin/sh", "-c",
-                            // 1) publica no formato de runtime store em /asset-output
-                            "dotnet tool install -g Amazon.Lambda.Tools && " +
-                            "dotnet lambda publish-layer --layer-type runtime-package-store " +
-                            "--layer-name ReservationMssUserCsLayer --framework net8.0 " +
-                            "--region sa-east-1 " +  
-                            "--s3-bucket teste-layer-reservation-mss-user-cs " +
-                            "--output-package /asset-output/layer.zip"
+                            // 1) Gera o runtime package store
+                            "dotnet store --manifest shared.csproj " +
+                            "   --runtime linux-x64 " +
+                            "   --framework net8.0 " +
+                            "   --output /asset-output/dotnetcore/store && " +
+                            // 2) Opcional, para debug:
+                            "ls -R /asset-output"
                         }
                     }
                 }),
