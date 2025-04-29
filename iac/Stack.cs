@@ -76,11 +76,11 @@ public class Stack
                 {
                     Bundling = newBundlingOptions(moduleName: "GetUser")
                 }),
-                Layers = new[] { sharedLayer },
                 Environment = new Dictionary<string, string>
                 {
-                    {"DOTNET_SHARED_STORE", "/opt/bin/"}
+                    {"DOTNET_SHARED_STORE", "/opt/runtime-package-store/"}
                 },
+                Layers = new[] { sharedLayer }
             });
 
             getUserLambdaFunction.ApplyRemovalPolicy(RemovalPolicy.DESTROY);
