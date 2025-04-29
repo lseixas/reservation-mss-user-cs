@@ -37,7 +37,8 @@ public class GetUserPresenter
         return new APIGatewayProxyResponse()
         {
             Body = "Hello from GetUser!",
-            StatusCode = 200
+            StatusCode = 200,
+            Headers = new Dictionary<string, string> { { "Content-Type", "application/json" } }
         };
     }
 }

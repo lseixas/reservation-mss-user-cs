@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScanLambdaDirectoryAssembly")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d5b74f4e17e4eae935a5e76e588c5f2267d42b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34937867539130ad3ac327e7901ac7b15a0dc5eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScanLambdaDirectoryAssembly")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScanLambdaDirectoryAssembly")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
