@@ -74,6 +74,7 @@ public class Stack
                             "dotnet tool install -g Amazon.Lambda.Tools && " +
                             "dotnet lambda publish-layer --layer-type runtime-package-store " +
                             "--layer-name ReservationMssUserCsLayer --framework net8.0 " +
+                            "--region sa-east-1 " +  
                             "--output-package /asset-output/layer.zip"
                         }
                     }
