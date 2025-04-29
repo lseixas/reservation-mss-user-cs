@@ -75,7 +75,7 @@ public class Stack
                             "dotnet lambda publish-layer --layer-type runtime-package-store " +
                             "--layer-name ReservationMssUserCsLayer --framework net8.0 " +
                             "--region sa-east-1 " +  
-                            "--sb teste-layer-reservation-mss-user-cs " +
+                            "--s3-bucket teste-layer-reservation-mss-user-cs " +
                             "--output-package /asset-output/layer.zip"
                         }
                     }
