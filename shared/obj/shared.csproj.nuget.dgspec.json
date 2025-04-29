@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\shared.csproj",
-        "projectName": "bin",
+        "projectName": "shared",
         "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\shared.csproj",
         "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
         "outputPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\obj\\",

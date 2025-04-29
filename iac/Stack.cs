@@ -2,6 +2,7 @@
 using Constructs;
 using Amazon.CDK;
 using Amazon.CDK.AWS.APIGateway;
+using Amazon.CDK.AWS.AppConfig;
 using Amazon.CDK.AWS.Lambda;
 using Amazon.CDK.AWS.Logs;
 using AssetOptions = Amazon.CDK.AWS.S3.Assets.AssetOptions;
@@ -76,7 +77,10 @@ public class Stack
                     Bundling = newBundlingOptions(moduleName: "GetUser")
                 }),
                 Layers = new[] { sharedLayer },
-                
+                Environment = new Dictionary<string, string>
+                {
+                    {"DOTNET_SHARED_STORE", "/opt/bin/"}
+                },
             });
 
             getUserLambdaFunction.ApplyRemovalPolicy(RemovalPolicy.DESTROY);

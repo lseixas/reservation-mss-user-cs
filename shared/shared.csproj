@@ -5,8 +5,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
-    <PackageId>bin</PackageId>
-    <RootNamespace>shared</RootNamespace>
   </PropertyGroup>
 
 </Project>
