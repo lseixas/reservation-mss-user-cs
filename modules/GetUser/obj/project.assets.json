@@ -412,6 +412,9 @@
       "shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Amazon.Lambda.Core": "2.2.0"
+        },
         "compile": {
           "bin/placeholder/shared.dll": {}
         },
@@ -950,6 +953,9 @@
       "shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Amazon.Lambda.Core": "2.2.0"
+        },
         "compile": {
           "bin/placeholder/shared.dll": {}
         },
