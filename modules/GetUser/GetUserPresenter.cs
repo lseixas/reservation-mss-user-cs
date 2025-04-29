@@ -1,13 +1,29 @@
 ﻿using System.Runtime.Loader;
+using System.Text.Json;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
+using Amazon.Lambda.Serialization.SystemTextJson;
 using shared;
 
-[assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
+[assembly: LambdaSerializer(typeof(CamelCaseLambdaJsonSerializer))]
 
-namespace GetUser;
+public class CamelCaseLambdaJsonSerializer
+    : DefaultLambdaJsonSerializer
+{
+    public CamelCaseLambdaJsonSerializer()
+        : base(options =>
+        {
+            // enforce camel-case naming for all properties
+            options.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+            options.DictionaryKeyPolicy = JsonNamingPolicy.CamelCase;
+        })
+    {
+    }
+}
+
 public class GetUserPresenter
 {
+    
     static GetUserPresenter()
     {
         AssemblyLoadContext.Default.Resolving += (loadContext, assemblyName) =>
