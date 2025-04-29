@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+    <AWSProjectType>LambdaLayer</AWSProjectType>
   </PropertyGroup>
 
 </Project>

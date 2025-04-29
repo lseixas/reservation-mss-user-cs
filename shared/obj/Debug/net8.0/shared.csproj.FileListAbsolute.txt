@@ -1,0 +1,12 @@
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\bin\Debug\net8.0\shared.deps.json
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\bin\Debug\net8.0\shared.dll
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\bin\Debug\net8.0\shared.pdb
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Debug\net8.0\shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Debug\net8.0\shared.AssemblyInfoInputs.cache
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Debug\net8.0\shared.AssemblyInfo.cs
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Debug\net8.0\shared.csproj.CoreCompileInputs.cache
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Debug\net8.0\shared.sourcelink.json
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Debug\net8.0\shared.dll
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Debug\net8.0\refint\shared.dll
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Debug\net8.0\shared.pdb
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Debug\net8.0\ref\shared.dll

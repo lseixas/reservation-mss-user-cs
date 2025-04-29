@@ -61,7 +61,23 @@ public class Stack
             var sharedLayer = new LayerVersion(this, "ReservationMssUserCsLayer", new LayerVersionProps
             {
                 CompatibleRuntimes = new[] { Runtime.DOTNET_8 },
-                Code = Code.FromAsset("./layer-package"),
+                Code = Code.FromAsset("./shared", new AssetOptions()
+                {
+                    Bundling = new BundlingOptions
+                    {
+                        Image = Runtime.DOTNET_8.BundlingImage,
+                        User = "root",
+                        OutputType = BundlingOutput.ARCHIVED,
+                        Command = new [] {
+                            "/bin/sh", "-c",
+                            // 1) publica no formato de runtime store em /asset-output
+                            "dotnet tool install -g Amazon.Lambda.Tools && " +
+                            "dotnet lambda publish-layer --layer-type runtime-package-store " +
+                            "--layer-name ReservationMssUserCsLayer --framework net8.0 " +
+                            "--output-package /asset-output/layer.zip"
+                        }
+                    }
+                }),
                 Description = "Lambda Layer for reservation csharp rebuild project",
                 RemovalPolicy = RemovalPolicy.DESTROY,
             });
