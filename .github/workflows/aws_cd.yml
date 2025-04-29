@@ -41,7 +41,7 @@ jobs:
       - name: Publish Shared
         run: |
           cd shared
-          dotnet publish ./shared.csproj -c Release -r linux-x64 --self-contained true -o ./published-shared
+          dotnet publish ./shared.csproj -c Release -r linux-x64 --self-contained true -o ../published-shared
           
       - name: Adjust Layer Directory # dir does not need an /opt, as lambda already creates this directory
         run: |
