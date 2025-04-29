@@ -1,0 +1,4 @@
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\bin\Release\net8.0\publish\shared.dll
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\bin\Release\net8.0\publish\shared.deps.json
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\bin\Release\net8.0\publish\shared.pdb
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\bin\Release\net8.0\publish\Amazon.Lambda.Core.dll

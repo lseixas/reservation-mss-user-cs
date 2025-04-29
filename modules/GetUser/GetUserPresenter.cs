@@ -1,4 +1,5 @@
-﻿using Amazon.Lambda.APIGatewayEvents;
+﻿using System.Runtime.Loader;
+using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using shared;
 
@@ -7,6 +8,19 @@ using shared;
 namespace GetUser;
 public class GetUserPresenter
 {
+    static GetUserPresenter()
+    {
+        AssemblyLoadContext.Default.Resolving += (loadContext, assemblyName) =>
+        {
+            var path = $"/opt/dotnetcore/store/{assemblyName.Name}.dll";
+            if (File.Exists(path))
+            {
+                return loadContext.LoadFromAssemblyPath(path);
+            }
+            return null;
+        };
+    }
+    
     public APIGatewayProxyResponse FunctionHandler(APIGatewayProxyRequest input, ILambdaContext context)
     {
         try

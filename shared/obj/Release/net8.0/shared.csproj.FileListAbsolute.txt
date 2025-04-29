@@ -10,3 +10,4 @@ C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Release\net8
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Release\net8.0\refint\shared.dll
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Release\net8.0\shared.pdb
 C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Release\net8.0\ref\shared.dll
+C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\shared\obj\Release\net8.0\shared.csproj.AssemblyReference.cache
