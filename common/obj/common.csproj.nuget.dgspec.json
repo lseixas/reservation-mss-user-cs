@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\Common\\Common.csproj": {}
+    "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\common\\common.csproj": {}
   },
   "projects": {
-    "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\Common\\Common.csproj": {
+    "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\common\\common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\Common\\Common.csproj",
-        "projectName": "Common",
-        "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\common\\common.csproj",
+        "projectName": "common",
+        "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\common\\common.csproj",
         "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
-        "outputPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\Common\\obj\\",
+        "outputPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leonardo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,11 +37,18 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Amazon.Lambda.Serialization.SystemTextJson": {
+              "target": "Package",
+              "version": "[2.4.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Leonardo\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

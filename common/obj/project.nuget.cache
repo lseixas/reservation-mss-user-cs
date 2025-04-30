@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kJloRL/2m6g=",
+  "success": true,
+  "projectFilePath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\common\\common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Leonardo\\.nuget\\packages\\amazon.lambda.core\\2.3.0\\amazon.lambda.core.2.3.0.nupkg.sha512",
+    "C:\\Users\\Leonardo\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.4.4\\amazon.lambda.serialization.systemtextjson.2.4.4.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,25 +1,9 @@
-﻿using System.Runtime.Loader;
-using System.Text.Json;
-using Amazon.Lambda.APIGatewayEvents;
+﻿using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
-using Amazon.Lambda.Serialization.SystemTextJson;
+using common;
 using shared;
 
-[assembly: LambdaSerializer(typeof(CamelCaseLambdaJsonSerializer))]
-
-public class CamelCaseLambdaJsonSerializer
-    : DefaultLambdaJsonSerializer
-{
-    public CamelCaseLambdaJsonSerializer()
-        : base(options =>
-        {
-            // enforce camel-case naming for all properties
-            options.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
-            options.DictionaryKeyPolicy = JsonNamingPolicy.CamelCase;
-        })
-    {
-    }
-}
+[assembly: LambdaSerializer(typeof(CustomCamelCaseLambdaJsonSerializer))]
 
 namespace GetUser
 {
@@ -28,16 +12,7 @@ namespace GetUser
 
         static GetUserPresenter()
         {
-            AssemblyLoadContext.Default.Resolving += (loadContext, assemblyName) =>
-            {
-                var path = $"/opt/dotnetcore/store/{assemblyName.Name}.dll";
-                if (File.Exists(path))
-                {
-                    return loadContext.LoadFromAssemblyPath(path);
-                }
-
-                return null;
-            };
+            AssemblyLoader.Initialize();
         }
 
         public APIGatewayProxyResponse FunctionHandler(APIGatewayProxyRequest input, ILambdaContext context)

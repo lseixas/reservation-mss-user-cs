@@ -4,6 +4,71 @@
     "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\modules\\GetUser\\GetUser.csproj": {}
   },
   "projects": {
+    "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\common\\common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\common\\common.csproj",
+        "projectName": "common",
+        "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\common\\common.csproj",
+        "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
+        "outputPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Leonardo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Amazon.Lambda.Serialization.SystemTextJson": {
+              "target": "Package",
+              "version": "[2.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Leonardo\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\modules\\GetUser\\GetUser.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,6 +91,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\common\\common.csproj": {
+                "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\common\\common.csproj"
+              },
               "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\shared.csproj": {
                 "projectPath": "C:\\WorkspaceRiderSDD\\reservation\\reservation_mss_user_cs\\shared\\shared.csproj"
               }
@@ -59,10 +127,6 @@
             "Amazon.Lambda.Core": {
               "target": "Package",
               "version": "[2.5.0, )"
-            },
-            "Amazon.Lambda.Serialization.SystemTextJson": {
-              "target": "Package",
-              "version": "[2.4.4, )"
             }
           },
           "imports": [
