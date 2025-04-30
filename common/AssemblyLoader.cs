@@ -5,7 +5,6 @@ namespace common;
 
 public static class AssemblyLoader
 {
-    [ModuleInitializer]
     public static void Initialize()
     {
         AssemblyLoadContext.Default.Resolving += (loadContext, assemblyName) =>

@@ -1,6 +1,0 @@
-C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\obj\Debug\net8.0\linux-x64\modules.csproj.AssemblyReference.cache
-C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\obj\Debug\net8.0\linux-x64\modules.GeneratedMSBuildEditorConfig.editorconfig
-C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\obj\Debug\net8.0\linux-x64\modules.AssemblyInfoInputs.cache
-C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\obj\Debug\net8.0\linux-x64\modules.AssemblyInfo.cs
-C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\obj\Debug\net8.0\linux-x64\modules.csproj.CoreCompileInputs.cache
-C:\WorkspaceRiderSDD\reservation\reservation_mss_user_cs\modules\obj\Debug\net8.0\linux-x64\modules.sourcelink.json

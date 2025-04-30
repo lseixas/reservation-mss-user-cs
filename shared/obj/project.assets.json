@@ -2,7 +2,20 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "Amazon.Lambda.Core/2.2.0": {
+      "Amazon.Lambda.APIGatewayEvents/2.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Amazon.Lambda.APIGatewayEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Amazon.Lambda.APIGatewayEvents.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Amazon.Lambda.Core/2.5.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/Amazon.Lambda.Core.dll": {
@@ -18,15 +31,33 @@
     }
   },
   "libraries": {
-    "Amazon.Lambda.Core/2.2.0": {
-      "sha512": "DHqKeD1CYocP0t1dJC/NaXfu+5k6AoqnQ1Hlu/J2mXpLpCyeJfY+tIqT5fpruDarUlU0NtdIH8zSkCjeinyb1A==",
+    "Amazon.Lambda.APIGatewayEvents/2.7.1": {
+      "sha512": "ORuKOBjquor/clDL5ogeUoKEHt/iRmaC673gFpNzpwF5VkJ7LRvQc4MYnkeIexnXEwdS7yTkM4eSu9wzORi/wg==",
       "type": "package",
-      "path": "amazon.lambda.core/2.2.0",
+      "path": "amazon.lambda.apigatewayevents/2.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "amazon.lambda.core.2.2.0.nupkg.sha512",
+        "amazon.lambda.apigatewayevents.2.7.1.nupkg.sha512",
+        "amazon.lambda.apigatewayevents.nuspec",
+        "lib/net8.0/Amazon.Lambda.APIGatewayEvents.dll",
+        "lib/net8.0/Amazon.Lambda.APIGatewayEvents.xml",
+        "lib/netcoreapp3.1/Amazon.Lambda.APIGatewayEvents.dll",
+        "lib/netcoreapp3.1/Amazon.Lambda.APIGatewayEvents.xml",
+        "lib/netstandard2.0/Amazon.Lambda.APIGatewayEvents.dll",
+        "lib/netstandard2.0/Amazon.Lambda.APIGatewayEvents.xml"
+      ]
+    },
+    "Amazon.Lambda.Core/2.5.0": {
+      "sha512": "JrDdnjUPFcZ74VDjVc2kMucyUpjHnN77Al9Owc17DYYFYAVav46fLRl1BlJj0UPhJxTakoB/h1PhU/6J005Qrw==",
+      "type": "package",
+      "path": "amazon.lambda.core/2.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "amazon.lambda.core.2.5.0.nupkg.sha512",
         "amazon.lambda.core.nuspec",
         "lib/net6.0/Amazon.Lambda.Core.dll",
         "lib/net6.0/Amazon.Lambda.Core.xml",
@@ -39,7 +70,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Amazon.Lambda.Core >= 2.2.0"
+      "Amazon.Lambda.APIGatewayEvents >= 2.7.1",
+      "Amazon.Lambda.Core >= 2.5.0"
     ]
   },
   "packageFolders": {
@@ -78,16 +110,19 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Amazon.Lambda.APIGatewayEvents": {
+            "target": "Package",
+            "version": "[2.7.1, )"
+          },
           "Amazon.Lambda.Core": {
             "target": "Package",
-            "version": "[2.2.0, )"
+            "version": "[2.5.0, )"
           }
         },
         "imports": [
@@ -106,7 +141,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Leonardo\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
