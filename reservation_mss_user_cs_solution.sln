@@ -5,8 +5,6 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iac", "iac\iac.csproj", "{6DEB9E0A-2F7F-4433-90B1-7287019AE960}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{558775B2-BB5A-4D2C-808C-B575122C75EF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetUser", "modules\GetUser\GetUser.csproj", "{E7195F8B-1DC2-4B15-AD31-053746316DE4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanLambdaDirectory", "modules\ScanLambdaDirectory\ScanLambdaDirectory.csproj", "{19B5FC56-A01E-433F-AA99-6CA4214D7287}"
@@ -90,7 +88,5 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E7195F8B-1DC2-4B15-AD31-053746316DE4} = {558775B2-BB5A-4D2C-808C-B575122C75EF}
-		{19B5FC56-A01E-433F-AA99-6CA4214D7287} = {558775B2-BB5A-4D2C-808C-B575122C75EF}
 	EndGlobalSection
 EndGlobal
